@@ -1,2 +1,10 @@
-# express-ts-scaffolding
-Scaffolding for Express + Typescript + Sequelize ORM
+# Express Scaffolding
+(Work in progress)
+
+- express
+- typescript
+- sequelize
+- pug
+- dotenv
+- jest
+- CircleCI

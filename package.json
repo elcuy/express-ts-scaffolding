@@ -1,0 +1,28 @@
+{
+  "name": "express-ts-scaffolding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "prestart": "npm run compile",
+    "start": "node app/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elcuy/express-ts-scaffolding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elcuy/express-ts-scaffolding/issues"
+  },
+  "homepage": "https://github.com/elcuy/express-ts-scaffolding#readme",
+  "dependencies": {
+    "@types/sequelize": "^4.27.23",
+    "express": "^4.16.3",
+    "sequelize": "^4.38.0",
+    "typescript": "^2.9.2"
+  }
+}
