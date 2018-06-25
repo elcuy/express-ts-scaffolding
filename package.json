@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf {app,src}/**/*.{js,js.map}",
     "compile": "tsc",
+    "lint": "tslint {app,src}/**/*.{ts,tsx}",
     "prestart": "npm run compile",
+    "pretest": "npm run compile",
     "start": "node app/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,9 +23,16 @@
   },
   "homepage": "https://github.com/elcuy/express-ts-scaffolding#readme",
   "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/jest": "^23.1.1",
+    "@types/rimraf": "^2.0.2",
     "@types/sequelize": "^4.27.23",
     "express": "^4.16.3",
+    "jest": "^23.1.0",
+    "jest-context": "^2.1.0",
+    "rimraf": "^2.6.2",
     "sequelize": "^4.38.0",
+    "tslint": "^5.10.0",
     "typescript": "^2.9.2"
   }
 }
