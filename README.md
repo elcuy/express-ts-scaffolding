@@ -1,10 +1,5 @@
 # Express Scaffolding
-(Work in progress)
+Still need the following:
 
-- express
-- typescript
-- sequelize
-- pug
-- dotenv
-- jest
 - CircleCI
+- Deployment tool

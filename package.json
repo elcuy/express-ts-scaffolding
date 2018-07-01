@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "clean": "rimraf {app,src}/**/*.{js,js.map}",
     "compile": "tsc",
     "lint": "tslint {app,src}/**/*.{ts,tsx}",
-    "prestart": "npm run compile",
+    "prestart": "npm run compile && npm run build",
     "pretest": "npm run compile",
     "start": "node app/app.js",
     "test": "jest"
@@ -27,12 +28,25 @@
     "@types/jest": "^23.1.1",
     "@types/rimraf": "^2.0.2",
     "@types/sequelize": "^4.27.23",
+    "babel-loader": "^7.1.4",
+    "bulma": "^0.7.1",
+    "css-loader": "^0.28.11",
+    "dotenv-safe": "^6.0.0",
     "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^3.0.2",
     "jest": "^23.1.0",
     "jest-context": "^2.1.0",
+    "node-sass": "^4.9.0",
+    "pug": "^2.0.3",
     "rimraf": "^2.6.2",
+    "sass-loader": "^7.0.3",
     "sequelize": "^4.38.0",
+    "style-loader": "^0.21.0",
     "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
+    "typescript": "^2.9.2",
+    "webpack": "^4.14.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.0.8"
   }
 }

@@ -2,8 +2,12 @@
 
 import express from "express";
 
-const app = express();
+import middlewares from "./middlewares";
+
+require("dotenv-safe").config();
+
+const app = middlewares(express());
 
 app.listen(3000, function () {
-  console.log("Example app listening on port 3000!");
+  console.log("=== SERVER STARTED ===");
 });
